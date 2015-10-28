@@ -2,7 +2,7 @@
 
 	Upscuits | short for uptime-biscuit
 	A quick overview of your server's uptime served on a nice dinner-tray.
-	
+
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
 	the Free Software Foundation, either version 3 of the License, or
@@ -16,7 +16,7 @@
 	--
 
 	@file		upsuits.js
-	@date		Tue Jun 02 2015 19:39:54
+	@date		Wed Oct 28 2015 11:49:48
 	@author		Pixel Bakkerij
 
 	Copyright (c) 2013 Pixel Bakkerij <http://pixelbakkerij.nl>
@@ -42,7 +42,7 @@ myApp.dashboard = (function($) {
 		$_prograss = $('.loading');
 		$_countdown = $('.countdown');
 		$_lastUpdate = $('#last-update');
-	
+
 		//translation
 		if (__language === false) {
 			$('.navbar-nav-language').remove();
@@ -51,7 +51,7 @@ myApp.dashboard = (function($) {
 				lng: __language,
 				fallbackLng: false,
 				detectLngQS: 'lang',
-				resGetPath: 'js/locales/__lng__-__ns__.json' 
+				resGetPath: 'js/locales/__lng__-__ns__.json'
 			}, function(t) {
 				$('[data-i18n]').i18n();
 			});
@@ -88,7 +88,7 @@ myApp.dashboard = (function($) {
 	}
 
 	/* load uptime variables from uptimerobot
-	* this calls jsonUptimeRobotApi() when loaded  
+	* this calls jsonUptimeRobotApi() when loaded
 	*/
 	function getUptime(apikey) {
 		var url = "//api.uptimerobot.com/getMonitors?apiKey=" + apikey + "&customUptimeRatio=1-7-30-365&format=json&logs=1";
@@ -150,7 +150,7 @@ myApp.dashboard = (function($) {
 		// interface of log-stuf like icons
 		data.typeicon = getLogIcon;
 		data.labeltype = getLogType;
-		
+
 		// gather data for the graphs
 		var uptimes = data.customuptimeratio.split("-");
 		uptimes.push(data.alltimeuptimeratio);
@@ -164,7 +164,7 @@ myApp.dashboard = (function($) {
 
 		//render the sh!t
 		var $output = $(Mustache.render(_template, data));
-		
+
 		//initialize the graphs
 		placeCharts($output);
 
@@ -206,11 +206,14 @@ myApp.dashboard = (function($) {
 
 			if (uptime <= 90) {
 				options.colorStart = '#dc554c'; //red
+				options.colorStop = '#cc453c'; //red
 				uptime = 90.01; //only show a red dot
 			} else if (uptime < 95) {
 				options.colorStart = '#3c89cc'; //blue
+				options.colorStop = '#3c89cc'; //blue
 			} else if (uptime < 99.5) {
 				options.colorStart = '#f2af46'; //yellow
+				options.colorStop = '#f2af46'; //yellow
 			} else {
 				options.colorStart = '#56b958'; //green
 			}

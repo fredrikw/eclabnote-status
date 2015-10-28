@@ -95,7 +95,7 @@ module.exports = function (grunt) {
 				tasks: ['replace', 'less', 'copy']
 			}
 		},
-	
+
 		copy: {
 			translation: {
 				files: [{
@@ -126,13 +126,13 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				options: {
-					port: 8000,
+					port: 8008,
 					base: 'public'
 				}
 			},
 			test: {
 				options: {
-					port: 8001,
+					port: 8009,
 					base: ['test', 'public']
 				}
 			},

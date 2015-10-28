@@ -5876,9 +5876,6 @@ body {
 .popover {
   white-space: nowrap;
 }
-.container {
-  width: 900px;
-}
 .jumbotron {
   background: #333333;
   color: #ffffff;
