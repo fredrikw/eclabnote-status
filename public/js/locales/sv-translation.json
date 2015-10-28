@@ -1,0 +1,39 @@
+{
+	"head": {
+		"title": "Upscuits | Uptime biscuits",
+		"subtitle": "kort för uptime-biscuit",
+		"hero": "En snabb överblick över din servers tillgänglighet serverad på ett middagsfat."
+	},
+	"times": {
+		"Last 24 hr": "Senaste 24 timmarna",
+		"Last 7 days": "Senaste 7 dagarna",
+		"Last 30 days": "Senaste 30 dagarna",
+		"Last year": "Senaste året",
+		"All time": "Alltid"
+	},
+	"close": "stäng",
+	"Log of last month": "Senaste månadens log",
+	"Open monitored page": "Öppna den granskade sidan",
+	"nav": {
+		"About": "Om",
+		"Fork me": "Fork me",
+		"Created by": "Skapad av"
+	},
+	"modal-about": {
+		"title": "Vad handlar den här sidan om?",
+		"content": [
+			"<p>På den här sidan kan du se olika servrar/appars status.</p>",
+			"<p>Mätarna visar tillgängligheten den senaste dagen, veckan, månaden, året och sedan granskningen startade. (Tidsintervallen är inte helt precisa...)</p>",
+			"<p>Klicka på <i class='icon-time'></i>-ikonen för att se den senaste månadens logfil eller öppna den granskade sidan genom att klicka på <i class='icon-link'></i>.</p>",
+			"<p>Sidan uppdateras automatiskt.</p>"
+			]
+	},
+	"no-api": {
+		"readme": "readme",
+		"Burned biscuits": "Brända kakor",
+		"content1": [
+			"Det ser ut som du glömde en ingrediens: API-nycklarna från Uptimerobot"
+		],
+		"content2": "Följde du alla stegen i receptet?"
+	}
+}
