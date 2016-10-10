@@ -4257,8 +4257,8 @@ a .icon-flip-vertical:before {
   color: #333333;
 }
 .navbar-inverse {
-  background-color: #222222;
-  border-color: #080808;
+  background-color: #dce6ff;
+  border-color: #a9c2ff;
 }
 .navbar-inverse .navbar-brand {
   color: #999999;
@@ -4283,7 +4283,7 @@ a .icon-flip-vertical:before {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #080808;
+  background-color: #a9c2ff;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4303,12 +4303,12 @@ a .icon-flip-vertical:before {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: #101010;
+  border-color: #b8ccff;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #080808;
+  background-color: #a9c2ff;
   color: #ffffff;
 }
 .navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
@@ -4327,7 +4327,7 @@ a .icon-flip-vertical:before {
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #080808;
+    border-color: #a9c2ff;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #999999;
@@ -4341,7 +4341,7 @@ a .icon-flip-vertical:before {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #080808;
+    background-color: #a9c2ff;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4464,7 +4464,7 @@ a.list-group-item.active > .badge,
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #dce6ff;
 }
 .jumbotron h1 {
   line-height: 1;
@@ -5875,10 +5875,6 @@ body {
 }
 .popover {
   white-space: nowrap;
-}
-.jumbotron {
-  background: #333333;
-  color: #ffffff;
 }
 .icon-red {
   color: #FF2E00;
